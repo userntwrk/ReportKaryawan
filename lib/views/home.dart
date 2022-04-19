@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: size.height*0.44,
+            height: size.height * 0.44,
             color: Repository.headerColor(context),
           ),
           ListView(
@@ -38,11 +38,12 @@ class Home extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Hi YOUNESS',
+                      Text('Hi User',
                           style: TextStyle(
-                              color: Colors.white.withOpacity(0.7), fontSize: 16)),
+                              color: Colors.white.withOpacity(0.7),
+                              fontSize: 16)),
                       const Gap(3),
-                      const Text('Welcome back',
+                      const Text('Welcome Back',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -56,7 +57,10 @@ class Home extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Colors.white,
                       ),
-                      child: Icon(IconlyBold.Notification, color: Styles.accentColor,),
+                      child: Icon(
+                        IconlyBold.Notification,
+                        color: Styles.accentColor,
+                      ),
                     ),
                   )
                 ],
@@ -93,8 +97,8 @@ class Home extends StatelessWidget {
                                     fontSize: 12)),
                             const Gap(5),
                             const Text('3829 4820 4629 5025',
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 15)),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 15)),
                           ],
                         ),
                       ),
@@ -135,7 +139,8 @@ class Home extends StatelessWidget {
               ),
               const Gap(15),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   color: Repository.accentColor(context),
@@ -173,7 +178,8 @@ class Home extends StatelessWidget {
                     children: [
                       Text('Today',
                           style: TextStyle(
-                              color: Repository.subTextColor(context), fontSize: 16)),
+                              color: Repository.subTextColor(context),
+                              fontSize: 16)),
                       const Gap(3),
                       Icon(CupertinoIcons.chevron_down,
                           color: Repository.subTextColor(context), size: 17)
@@ -222,11 +228,15 @@ class Home extends StatelessWidget {
                                   color: const Color(0xFFFF736C), size: 20)
                               : const SizedBox()),
                       title: Text(trs['name'],
-                          style: TextStyle(color: Repository.textColor(context), fontWeight: FontWeight.w500)),
+                          style: TextStyle(
+                              color: Repository.textColor(context),
+                              fontWeight: FontWeight.w500)),
                       subtitle: Text(trs['date'],
-                          style: TextStyle(color: Repository.subTextColor(context))),
+                          style: TextStyle(
+                              color: Repository.subTextColor(context))),
                       trailing: Text(trs['amount'],
-                          style: const TextStyle(fontSize: 17, color: Colors.white)),
+                          style: const TextStyle(
+                              fontSize: 17, color: Colors.white)),
                     );
                   },
                 ),

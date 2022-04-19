@@ -40,13 +40,15 @@ class Profile extends StatelessWidget {
                     children: [
                       const Gap(60),
                       Center(
-                          child: Text('YOUNESS MOUATASSIM',
+                          child: Text('User',
                               style: TextStyle(
-                                  color: Repository.textColor(context), fontSize: 20, fontWeight: FontWeight.bold))),
+                                  color: Repository.textColor(context),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold))),
                       const Gap(10),
-                      Text('younes@gmail.com',
-                          style:
-                              TextStyle(color: Repository.subTextColor(context))),
+                      Text('user@gmail.com',
+                          style: TextStyle(
+                              color: Repository.subTextColor(context))),
                       const Gap(25),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -89,27 +91,31 @@ class Profile extends StatelessWidget {
           CustomListTile(
               icon: IconlyBold.Profile,
               color: const Color(0xFFC76CD9),
-              title: 'Information', context: context),
+              title: 'Information',
+              context: context),
           CustomListTile(
               icon: IconlyBold.Shield_Done,
               color: const Color(0xFF229e76),
-              title: 'Security', context: context),
+              title: 'Security',
+              context: context),
           CustomListTile(
               icon: IconlyBold.Message,
               color: const Color(0xFFe17a0a),
-              title: 'Contact us', context: context),
+              title: 'Contact us',
+              context: context),
           CustomListTile(
               icon: IconlyBold.Document,
               color: const Color(0xFF064c6d),
-              title: 'Support', context: context),
+              title: 'Support',
+              context: context),
           CustomListTile(
               icon: Icons.dark_mode,
               color: const Color(0xFF0536e8),
               title: 'Dark Mode',
-              isDarkMode: true, context: context),
+              isDarkMode: true,
+              context: context),
         ],
       ),
     );
   }
 }
-
