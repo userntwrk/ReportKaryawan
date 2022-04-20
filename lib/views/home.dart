@@ -169,7 +169,7 @@ class Home extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Transactions',
+                  Text('Recent Project',
                       style: TextStyle(
                           color: Repository.textColor(context),
                           fontSize: 18,

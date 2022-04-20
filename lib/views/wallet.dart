@@ -17,7 +17,8 @@ class Wallet extends StatelessWidget {
     final size = Layouts.getSize(context);
     return Scaffold(
       backgroundColor: Repository.bgColor(context),
-      appBar: myAppBar(title: 'All Cards', implyLeading: false, context: context),
+      appBar: myAppBar(
+          title: 'All Projects & Cards', implyLeading: false, context: context),
       body: ListView(
         padding: const EdgeInsets.all(15),
         children: [
@@ -37,17 +38,20 @@ class Wallet extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(CupertinoIcons.add, color: Repository.textColor(context), size: 20),
+                      Icon(CupertinoIcons.add,
+                          color: Repository.textColor(context), size: 20),
                       const Gap(10),
-                      Text('ADD NEW CARD',
-                          style: TextStyle(color: Repository.textColor(context)))
+                      Text('ADD NEW PROJECT',
+                          style:
+                              TextStyle(color: Repository.textColor(context)))
                     ],
                   ),
                 ),
               ),
               CircleAvatar(
                 backgroundColor: Repository.accentColor(context),
-                child: Icon(IconlyBold.Scan, color: Repository.textColor(context)),
+                child:
+                    Icon(IconlyBold.Scan, color: Repository.textColor(context)),
                 radius: 23,
               )
             ],

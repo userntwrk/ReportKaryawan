@@ -34,7 +34,8 @@ class _AddCardState extends State<AddCard> {
     SizeConfig.init(context);
     return Scaffold(
       backgroundColor: Repository.bgColor(context),
-      appBar: myAppBar(title: 'Add Card', implyLeading: true, context: context),
+      appBar:
+          myAppBar(title: 'Add Project', implyLeading: true, context: context),
       body: ListView(
         padding: const EdgeInsets.all(15),
         children: [
@@ -77,10 +78,8 @@ class _AddCardState extends State<AddCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       customColumn(
-                          title: 'CARD NUMBER',
-                          subtitle: '**** **** **** ****'),
+                          title: 'Project Name', subtitle: 'Report Karyawan'),
                       const Spacer(),
-
                       Row(
                         children: [
                           customColumn(
@@ -148,7 +147,7 @@ class _AddCardState extends State<AddCard> {
           ),
           const Gap(30),
           DefaultTextField(
-              controller: _cardHolderName, title: 'Card Holder Name'),
+              controller: _cardHolderName, title: 'Enter Project Name'),
           DefaultTextField(
               controller: _cardNumber,
               title: 'Card Number',

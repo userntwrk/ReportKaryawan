@@ -17,7 +17,6 @@ class Stats extends StatefulWidget {
 }
 
 class _StatsState extends State<Stats> {
-
   bool showAvg = false;
 
   @override
@@ -36,26 +35,25 @@ class _StatsState extends State<Stats> {
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Repository.accentColor2(context),
-              border: Border.all(color: Repository.accentColor(context))
-            ),
+                borderRadius: BorderRadius.circular(15),
+                color: Repository.accentColor2(context),
+                border: Border.all(color: Repository.accentColor(context))),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                     padding: const EdgeInsets.fromLTRB(20, 15, 20, 5),
-                    child: Text('Total Balance',
-                        style:
-                            TextStyle(color: Repository.subTextColor(context)))),
+                    child: Text('Work Presentation',
+                        style: TextStyle(
+                            color: Repository.subTextColor(context)))),
                 Divider(
                   color: Repository.dividerColor(context),
                   thickness: 2,
                 ),
                 Container(
                     padding: const EdgeInsets.fromLTRB(20, 25, 20, 30),
-                    child: Text('\20.00 DHS',
+                    child: Text('\80 %',
                         style: TextStyle(
                             color: Repository.titleColor(context),
                             fontSize: 32,
@@ -68,21 +66,21 @@ class _StatsState extends State<Stats> {
             width: double.infinity,
             padding: const EdgeInsets.all(3),
             decoration: BoxDecoration(
-              color: Repository.accentColor2(context),
-              borderRadius: BorderRadius.circular(100),
-              border: Border.all(color: Repository.accentColor(context))
-            ),
+                color: Repository.accentColor2(context),
+                borderRadius: BorderRadius.circular(100),
+                border: Border.all(color: Repository.accentColor(context))),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   alignment: Alignment.center,
-                  width: size.width*0.44,
+                  width: size.width * 0.44,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       color: Repository.headerColor(context)),
-                  child: const Text('Income', style: TextStyle(color: Colors.white, fontSize: 18)),
+                  child: const Text('Project Completion',
+                      style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 10),
@@ -91,9 +89,11 @@ class _StatsState extends State<Stats> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       color: Colors.transparent),
-                  child: Text('Expenses',
+                  child: Text('Income',
                       style: TextStyle(
-                          color: Repository.titleColor(context), fontSize: 17, fontWeight: FontWeight.w500)),
+                          color: Repository.titleColor(context),
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500)),
                 ),
               ],
             ),
@@ -101,11 +101,10 @@ class _StatsState extends State<Stats> {
           const Gap(20),
           Container(
             decoration: BoxDecoration(
-              borderRadius: const BorderRadius.all(
-                Radius.circular(20),
-              ),
-              border: Border.all(color: Repository.accentColor(context))
-            ),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(20),
+                ),
+                border: Border.all(color: Repository.accentColor(context))),
             child: Column(
               children: [
                 Container(
@@ -124,7 +123,8 @@ class _StatsState extends State<Stats> {
                           CircleAvatar(
                             backgroundColor: Repository.iconColor(context),
                             child: Icon(CupertinoIcons.eye_slash_fill,
-                                color: Repository.titleColor(context), size: 17),
+                                color: Repository.titleColor(context),
+                                size: 17),
                           ),
                         ],
                       ),
@@ -161,7 +161,7 @@ class _StatsState extends State<Stats> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Transactions',
+              Text('Recent Projects',
                   style: TextStyle(
                       color: Repository.titleColor(context),
                       fontSize: 18,
@@ -212,21 +212,25 @@ class _StatsState extends State<Stats> {
                         image: i == 0
                             ? null
                             : DecorationImage(
-                          image: AssetImage(trs['avatar']),
-                          fit: BoxFit.cover,
-                        ),
+                                image: AssetImage(trs['avatar']),
+                                fit: BoxFit.cover,
+                              ),
                         shape: BoxShape.circle,
                       ),
                       child: i == 0
                           ? Icon(trs['icon'],
-                          color: const Color(0xFFFF736C), size: 20)
+                              color: const Color(0xFFFF736C), size: 20)
                           : const SizedBox()),
                   title: Text(trs['name'],
-                      style: TextStyle(color: Repository.textColor(context), fontWeight: FontWeight.w500)),
+                      style: TextStyle(
+                          color: Repository.textColor(context),
+                          fontWeight: FontWeight.w500)),
                   subtitle: Text(trs['date'],
-                      style: TextStyle(color: Repository.subTextColor(context))),
+                      style:
+                          TextStyle(color: Repository.subTextColor(context))),
                   trailing: Text(trs['amount'],
-                      style: const TextStyle(fontSize: 17, color: Colors.white)),
+                      style:
+                          const TextStyle(fontSize: 17, color: Colors.white)),
                 );
               },
             ),
@@ -237,9 +241,7 @@ class _StatsState extends State<Stats> {
   }
 
   LineChartData mainData() {
-    List<Color> gradientColors = [
-      Repository.selectedItemColor(context)
-    ];
+    List<Color> gradientColors = [Repository.selectedItemColor(context)];
     return LineChartData(
       gridData: FlGridData(
         show: false,
@@ -265,7 +267,8 @@ class _StatsState extends State<Stats> {
           showTitles: true,
           reservedSize: 40,
           interval: 1.1,
-          getTextStyles: (context, value) => const TextStyle(color: Colors.grey, fontSize: 17),
+          getTextStyles: (context, value) =>
+              const TextStyle(color: Colors.grey, fontSize: 17),
           getTitles: (value) {
             switch (value.toInt()) {
               case 1:
@@ -312,7 +315,8 @@ class _StatsState extends State<Stats> {
       ),
       borderData: FlBorderData(
         show: false,
-        border: Border.all(color: Repository.selectedItemColor(context), width: 1),
+        border:
+            Border.all(color: Repository.selectedItemColor(context), width: 1),
       ),
       minX: 0,
       maxX: 9,
