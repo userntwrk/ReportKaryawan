@@ -4,20 +4,20 @@ import 'package:flutter_banking_app/generated/assets.dart';
 List<Map<String, dynamic>> transactions = [
   {
     'icon': CupertinoIcons.house_fill,
-    'name': 'SALAHDINE BOUKADI',
+    'name': 'TO DO LIST',
     'date': '4:56 PM',
-    'amount': '-140'
+    'amount': 'Completed'
   },
   {
-    'avatar': Assets.dash,
-    'name': 'BOUTAINA REMAH',
+    'avatar': Assets.code2,
+    'name': 'E-COMMERCE',
     'date': '5:20 PM',
-    'amount': '+100'
+    'amount': 'In Progress'
   },
-  { //Assets.memoji2 for emoji from assets
-    'avatar': Assets.memoji1,
-    'name': 'MOHAMMED YOUSSFI',
+  {
+    'avatar': Assets.code3,
+    'name': 'REPORT KARYAWAN',
     'date': '7:21 PM',
-    'amount': '+110'
+    'amount': 'In Progress'
   },
 ];

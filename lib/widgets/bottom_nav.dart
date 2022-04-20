@@ -5,7 +5,7 @@ import 'package:flutter_banking_app/utils/styles.dart';
 import 'package:flutter_banking_app/views/home.dart';
 import 'package:flutter_banking_app/views/profile.dart';
 import 'package:flutter_banking_app/views/stats.dart';
-import 'package:flutter_banking_app/views/wallet.dart';
+import 'package:flutter_banking_app/views/project.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class BottomNav extends StatefulWidget {
@@ -52,7 +52,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: Icon(IconlyBold.Wallet),
-            label: 'Wallet',
+            label: 'Project',
           ),
           BottomNavigationBarItem(
             icon: Icon(IconlyBold.Chart),

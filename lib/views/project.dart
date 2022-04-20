@@ -5,7 +5,7 @@ import 'package:flutter_banking_app/repo/repository.dart';
 import 'package:flutter_banking_app/utils/iconly/iconly_bold.dart';
 import 'package:flutter_banking_app/utils/layouts.dart';
 import 'package:flutter_banking_app/utils/styles.dart';
-import 'package:flutter_banking_app/views/add_card.dart';
+import 'package:flutter_banking_app/views/add_project.dart';
 import 'package:flutter_banking_app/widgets/my_app_bar.dart';
 import 'package:gap/gap.dart';
 

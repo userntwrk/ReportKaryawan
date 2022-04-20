@@ -172,7 +172,7 @@ class _AddCardState extends State<AddCard> {
             color: Repository.selectedItemColor(context),
             context: context,
             callback: () {},
-            text: 'Add Card',
+            text: 'Add Project',
           )
         ],
       ),
