@@ -76,7 +76,7 @@ class Wallet extends StatelessWidget {
                       children: [
                         Image.asset(Assets.code1,
                             width: 60, height: 50, fit: BoxFit.cover),
-                        const Text('\To Do List',
+                        const Text('To Do List',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 32,
@@ -87,9 +87,9 @@ class Wallet extends StatelessWidget {
                                 color: Colors.white.withOpacity(0.5),
                                 fontSize: 12)),
                         const Gap(5),
-                        const Text('',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 15)),
+                        // const Text('',
+                        //     style:
+                        //         TextStyle(color: Colors.white, fontSize: 15)),
                       ],
                     ),
                   ),
@@ -146,7 +146,7 @@ class Wallet extends StatelessWidget {
                       children: [
                         Image.asset(Assets.code2,
                             width: 60, height: 50, fit: BoxFit.cover),
-                        Text('\E-Commerce',
+                        Text('E-Commerce',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 32,
@@ -157,9 +157,9 @@ class Wallet extends StatelessWidget {
                                 color: Styles.primaryColor.withOpacity(0.7),
                                 fontSize: 12)),
                         const Gap(5),
-                        Text('',
-                            style: TextStyle(
-                                color: Styles.primaryColor, fontSize: 15)),
+                        // Text('',
+                        //     style: TextStyle(
+                        //         color: Styles.primaryColor, fontSize: 15)),
                       ],
                     ),
                   ),
@@ -229,9 +229,9 @@ class Wallet extends StatelessWidget {
                                 color: Colors.white.withOpacity(0.5),
                                 fontSize: 12)),
                         const Gap(5),
-                        const Text('',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 15)),
+                        // const Text('',
+                        //     style:
+                        //         TextStyle(color: Colors.white, fontSize: 15)),
                       ],
                     ),
                   ),

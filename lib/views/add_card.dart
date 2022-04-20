@@ -78,14 +78,13 @@ class _AddCardState extends State<AddCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       customColumn(
-                          title: 'Project Name', subtitle: 'Report Karyawan'),
+                          title: 'Karyawan', subtitle: 'ID Card : 09126761768'),
                       const Spacer(),
                       Row(
                         children: [
-                          customColumn(
-                              title: 'CARD HOLDER NAME', subtitle: 'N/A'),
+                          customColumn(title: 'NAME', subtitle: 'User'),
                           const Gap(40),
-                          customColumn(title: 'VALID', subtitle: 'N/A')
+                          customColumn(title: 'STATUS', subtitle: 'Active')
                         ],
                       )
                     ],

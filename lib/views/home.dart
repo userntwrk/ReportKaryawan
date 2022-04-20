@@ -96,9 +96,9 @@ class Home extends StatelessWidget {
                                     color: Colors.white.withOpacity(0.5),
                                     fontSize: 12)),
                             const Gap(5),
-                            const Text('',
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 15)),
+                            // const Text('',
+                            //     style: TextStyle(
+                            //         color: Colors.white, fontSize: 15)),
                           ],
                         ),
                       ),
