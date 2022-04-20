@@ -18,7 +18,7 @@ class Wallet extends StatelessWidget {
     return Scaffold(
       backgroundColor: Repository.bgColor(context),
       appBar: myAppBar(
-          title: 'All Projects & Cards', implyLeading: false, context: context),
+          title: 'All Projects', implyLeading: false, context: context),
       body: ListView(
         padding: const EdgeInsets.all(15),
         children: [
@@ -74,20 +74,20 @@ class Wallet extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset(Assets.cardsVisaYellow,
+                        Image.asset(Assets.code1,
                             width: 60, height: 50, fit: BoxFit.cover),
-                        const Text('\1500.00 DHS',
+                        const Text('\To Do List',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 32,
                                 color: Colors.white)),
                         const Gap(20),
-                        Text('CARD NUMBER',
+                        Text('100% Complete',
                             style: TextStyle(
                                 color: Colors.white.withOpacity(0.5),
                                 fontSize: 12)),
                         const Gap(5),
-                        const Text('3829 4820 4629 5025',
+                        const Text('',
                             style:
                                 TextStyle(color: Colors.white, fontSize: 15)),
                       ],
@@ -115,7 +115,8 @@ class Wallet extends StatelessWidget {
                               color: Colors.white, size: 20),
                         ),
                         const Spacer(),
-                        const Text('VALID', style: TextStyle(fontSize: 12)),
+                        const Text('Date Completion',
+                            style: TextStyle(fontSize: 12)),
                         const Gap(5),
                         const Text('05/22', style: TextStyle(fontSize: 15)),
                       ],
@@ -143,20 +144,20 @@ class Wallet extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset(Assets.cardsMastercard,
+                        Image.asset(Assets.code2,
                             width: 60, height: 50, fit: BoxFit.cover),
-                        Text('\20.00 DHS',
+                        Text('\E-Commerce',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 32,
                                 color: Styles.primaryColor)),
                         const Gap(20),
-                        Text('CARD NUMBER',
+                        Text('70% Complete',
                             style: TextStyle(
                                 color: Styles.primaryColor.withOpacity(0.7),
                                 fontSize: 12)),
                         const Gap(5),
-                        Text('3829 4820 4629 5025',
+                        Text('',
                             style: TextStyle(
                                 color: Styles.primaryColor, fontSize: 15)),
                       ],
@@ -182,7 +183,7 @@ class Wallet extends StatelessWidget {
                               color: Styles.greenColor, size: 20),
                         ),
                         const Spacer(),
-                        Text('VALID',
+                        Text('Date Completion',
                             style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.white.withOpacity(0.5))),
@@ -215,20 +216,20 @@ class Wallet extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset(Assets.cardsPaypal,
+                        Image.asset(Assets.code3,
                             width: 80, height: 50, fit: BoxFit.cover),
-                        const Text('\250.00 \$',
+                        const Text('Report Karyawan',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 32,
                                 color: Colors.white)),
                         const Gap(20),
-                        Text('CARD NUMBER',
+                        Text('90% Complete',
                             style: TextStyle(
                                 color: Colors.white.withOpacity(0.5),
                                 fontSize: 12)),
                         const Gap(5),
-                        const Text('3829 4820 4629 5025',
+                        const Text('',
                             style:
                                 TextStyle(color: Colors.white, fontSize: 15)),
                       ],
@@ -256,7 +257,8 @@ class Wallet extends StatelessWidget {
                               color: Colors.white, size: 20),
                         ),
                         const Spacer(),
-                        const Text('VALID', style: TextStyle(fontSize: 12)),
+                        const Text('Date Completion',
+                            style: TextStyle(fontSize: 12)),
                         const Gap(5),
                         const Text('05/22', style: TextStyle(fontSize: 15)),
                       ],

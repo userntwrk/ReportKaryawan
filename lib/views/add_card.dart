@@ -21,9 +21,9 @@ class _AddCardState extends State<AddCard> {
   final TextEditingController _cardHolderName = TextEditingController();
   final TextEditingController _cardNumber = TextEditingController();
   List paymentCardsList = [
-    Assets.cardsVisa,
-    Assets.cardsMastercard,
-    Assets.cardsPaypal,
+    Assets.code1,
+    Assets.code2,
+    Assets.code3,
     // Assets.cardsSkrill
   ];
   int selectedCard = 0;
@@ -56,9 +56,9 @@ class _AddCardState extends State<AddCard> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset(Assets.cardsVisaWhite,
+                      Image.asset('project/profile.png',
                           width: 60, height: 45, fit: BoxFit.cover),
-                      const Text('\$00.00',
+                      const Text('',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 22,
@@ -149,23 +149,21 @@ class _AddCardState extends State<AddCard> {
           DefaultTextField(
               controller: _cardHolderName, title: 'Enter Project Name'),
           DefaultTextField(
-              controller: _cardNumber,
-              title: 'Card Number',
-              label: '5632-1587-536-256'),
+              controller: _cardNumber, title: 'Theme', label: 'Theme'),
           Row(
             children: [
               Flexible(
                 child: DefaultTextField(
                     controller: _cardNumber,
-                    title: 'Expiry date',
+                    title: 'Date Project',
                     label: '05/2022'),
               ),
               const Gap(10),
               Flexible(
                 child: DefaultTextField(
                     controller: _cardNumber,
-                    title: 'CVC/CVV',
-                    label: '******',
+                    title: 'Main Language',
+                    label: 'Enter Programming Language',
                     obscure: true),
               ),
             ],

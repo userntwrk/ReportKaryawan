@@ -25,5 +25,9 @@ class Assets {
   static const String memoji7 = 'assets/memoji/7.png';
   static const String memoji8 = 'assets/memoji/8.png';
   static const String memoji9 = 'assets/memoji/9.png';
-
+  static const String code1 = 'assets/project/code1.png';
+  static const String code2 = 'assets/project/code2.png';
+  static const String code3 = 'project/code3.png';
+  static const String employe = 'assets/project/employe1.png';
+  static const String profile = 'project/profiles.png';
 }

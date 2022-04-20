@@ -83,20 +83,20 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Image.asset(Assets.cardsVisaYellow,
+                            Image.asset('project/employe1.png',
                                 width: 60, height: 50, fit: BoxFit.cover),
-                            const Text('\250.00 DHS',
+                            const Text('\Karyawan',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 32,
                                     color: Colors.white)),
                             const Gap(20),
-                            Text('CARD NUMBER',
+                            Text('ID Card : 09126761768',
                                 style: TextStyle(
                                     color: Colors.white.withOpacity(0.5),
                                     fontSize: 12)),
                             const Gap(5),
-                            const Text('3829 4820 4629 5025',
+                            const Text('',
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 15)),
                           ],
@@ -127,9 +127,11 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             const Spacer(),
-                            const Text('VALID', style: TextStyle(fontSize: 12)),
+                            const Text('Status',
+                                style: TextStyle(fontSize: 12)),
                             const Gap(5),
-                            const Text('05/22', style: TextStyle(fontSize: 15)),
+                            const Text('Active',
+                                style: TextStyle(fontSize: 15)),
                           ],
                         ),
                       )
